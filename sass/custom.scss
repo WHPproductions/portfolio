@@ -16,3 +16,12 @@ $bootstrap-icons-font-dir: "./bi-fonts";
 .nav-item-stretch:hover {
     background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity));
 }
+
+/* Stylings for scrolling offsets */
+
+#certificates {
+    scroll-margin-top: 64px;
+}
+#projects {
+    scroll-margin-top: 64px;
+}

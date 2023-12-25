@@ -19,7 +19,10 @@
               <a class="nav-link text-center" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item nav-item-stretch">
-              <a class="nav-link text-center" href="#">Link</a>
+              <a class="nav-link text-center" href="#certificates">Certificates</a>
+            </li>
+            <li class="nav-item nav-item-stretch text-center">
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item dropdown nav-item-stretch">
               <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,9 +34,6 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            </li>
-            <li class="nav-item nav-item-stretch text-center">
-              <a class="nav-link" href="#">Disabled</a>
             </li>
           </ul>
         </div>
@@ -51,11 +51,49 @@
     </div>
   </header>
   <main>
+    <section id="certificates">
+      <h1 class="text-center display-1">Certificates</h1>
+      <div>
+
+      </div>
+    </section>
     <section id="projects">
       <h1 class="text-center display-1">Projects</h1>
       <p class="text-center my-4">Next are my projects I've made in my career</p>
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="images/TF2 fan page.png" alt="Fan page thumbnail" role="img" aria-label="Placeholder: Thumbnail" focusable="false">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+              <div class="card-body">
+                <p class="card-text">This is a fan page I've made for a game called Team Fortress 2. This game has always been one of my most favorite games ever, and I have spent lots of hours playing it.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                    <a class="btn btn-sm btn-primary link-light link-underline-opacity-0" href="https://github.com/WHPproductions/WHPproductions.github.io" target="_blank" rel="noopener noreferrer">Source</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe src="https://whpproductions.github.io/" width="100%" height="400" frameborder="0"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col">
             <div class="card shadow-sm">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -71,21 +109,29 @@
               </div>
             </div>
           </div>
-
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Source</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="certificates">
-      <h1 class="text-center display-1">Certificates</h1>
-      <div>
-
       </div>
     </section>
   </main>
   <footer class="container py-4 px-2">
     <div class="d-block border-bottom border-dark-subtle">
       <ul class="list-unstyled d-flex justify-content-center gap-2 pb-3">
-        <li><a aria-label="what's app contact" class="text-body-secondary" href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp h2"></i></a></li>
+        <li><a aria-label="What's app contact" class="text-body-secondary" href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp h2"></i></a></li>
         <li><a aria-label="Linked in contact" class="text-body-secondary" href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin h2"></a></i></li>
         <li><a aria-label="G-mail contact" class="text-body-secondary" href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope h2"></a></i></li>
       </ul>

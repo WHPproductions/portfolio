@@ -20088,4 +20088,13 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity));
 }
 
+/* Stylings for scrolling offsets */
+#certificates {
+  scroll-margin-top: 64px;
+}
+
+#projects {
+  scroll-margin-top: 64px;
+}
+
 /*# sourceMappingURL=style.css.map */
