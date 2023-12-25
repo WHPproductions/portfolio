@@ -1,0 +1,18 @@
+// Default variable overrides
+
+// Bootstrap variables
+
+// Bootstrap icons variables
+$bootstrap-icons-font-dir: "./bi-fonts";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
+
+// Additional custom code here
+
+.nav-item-stretch {
+    flex: 1;
+}
+.nav-item-stretch:hover {
+    background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity));
+}
