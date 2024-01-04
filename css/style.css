@@ -20080,6 +20080,12 @@ textarea.form-control-lg {
   content: "賈";
 }
 
+/* Initialize */
+main section {
+  margin-bottom: 3rem;
+}
+
+/* Stylings for navbar */
 .nav-item-stretch {
   flex: 1;
 }
@@ -20088,12 +20094,21 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity));
 }
 
-/* Stylings for scrolling offsets */
-#certificates {
-  scroll-margin-top: 64px;
+/* Stylings for skills section */
+#skills .logo {
+  height: 100px;
 }
 
-#projects {
+/* Stylings for projects section */
+#projects .custom-card-header {
+  height: 250px;
+}
+
+/* Stylings for scrolling offsets */
+#skills,
+#certificates,
+#projects,
+#contacts {
   scroll-margin-top: 64px;
 }
 

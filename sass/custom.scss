@@ -10,6 +10,14 @@ $bootstrap-icons-font-dir: "./bi-fonts";
 
 // Additional custom code here
 
+/* Initialize */
+
+main section {
+    margin-bottom: map-get($spacers, 5);
+}
+
+/* Stylings for navbar */
+
 .nav-item-stretch {
     flex: 1;
 }
@@ -17,11 +25,24 @@ $bootstrap-icons-font-dir: "./bi-fonts";
     background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity));
 }
 
+/* Stylings for skills section */
+
+#skills .logo {
+    height: 100px;
+}
+
+/* Stylings for projects section */
+
+#projects .custom-card-header {
+    height: 250px;
+}
+
 /* Stylings for scrolling offsets */
 
-#certificates {
+#skills,
+#certificates,
+#projects,
+#contacts {
     scroll-margin-top: 64px;
 }
-#projects {
-    scroll-margin-top: 64px;
-}
+

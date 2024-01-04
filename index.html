@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="pt-5">
+
+<body class="pt-5" data-bs-spy="scroll" data-bs-target="navbar">
   <header>
-    <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
       <div class="container-fluid justify-content-end">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center align-items-stretch" id="navbarSupportedContent">
@@ -19,76 +22,178 @@
               <a class="nav-link text-center" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item nav-item-stretch">
+              <a class="nav-link text-center" aria-current="page" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item nav-item-stretch">
               <a class="nav-link text-center" href="#certificates">Certificates</a>
             </li>
             <li class="nav-item nav-item-stretch text-center">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item dropdown nav-item-stretch">
-              <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item nav-item-stretch text-center">
+              <a class="nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="text-center py-5 px-1">
-      <img class="img-thumbnail mx-auto d-block border border-3 border-primary rounded-circle" src="images/Winata Hadi Pratama.jpg" alt="Winata Hadi Pratama's image" height="200" width="200">
+      <img class="img-thumbnail mx-auto d-block border border-3 border-primary rounded-circle"
+        src="images/Winata Hadi Pratama.jpg" alt="Winata Hadi Pratama's image" height="200" width="200">
       <div class="col-lg-6 mx-auto">
         <h1 class="fw-bold">Winata Hadi Pratama</h1>
         <p class="lead">Fullstack Web Developer</p>
         <p class="mx-5">
-          My name is Winata Hadi Pratama, a self-taught web developer passionate about crafting creative experiences. I have earned a lot of programming certificates that might show you how much I am experienced in web development, I've successfully made a source code for back-end service and a front-end website in many online courses. And I can also use popular frameworks for either back-end or front-end for accelerating my development process.
+          My name is Winata Hadi Pratama, a self-taught web developer passionate about crafting creative experiences. I
+          have earned a lot of programming certificates that might show you how much I am experienced in web
+          development, I've successfully made a source code for back-end service and a front-end website in many online
+          courses. And I can also use popular frameworks for either back-end or front-end for accelerating my
+          development process.
         </p>
       </div>
     </div>
   </header>
   <main>
+    <section id="skills">
+      <h1 class="text-center display-1 mb-5">Skills</h1>
+      <p class="text-center mb-5 pb-2">These are all the languages and frameworks that I've used and experienced with while developing my own projects.</p>
+      <div class="col-sm-8 col-10 mx-auto d-flex flex-wrap justify-content-center gap-5">
+        <img class="logo" src="images/Logos/HTML.png" alt="HTML logo" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-title="HTML">
+        <img class="logo" src="images/Logos/CSS.png" alt="CSS logo" data-bs-toggle="tooltip" data-bs-placement="top"
+          data-bs-title="CSS">
+        <img class="logo" src="images/Logos/JavaScript.png" alt="Javascript logo" data-bs-toggle="tooltip"
+          data-bs-placement="top" data-bs-title="JavaScript">
+        <img class="logo" src="images/Logos/Bootstrap.png" alt="Bootstrap logo" data-bs-toggle="tooltip"
+          data-bs-placement="top" data-bs-title="Bootstrap">
+        <img class="logo" src="images/Logos/Node JS.png" alt="Node JS logo" data-bs-toggle="tooltip"
+          data-bs-placement="top" data-bs-title="Node JS">
+        <img class="logo" src="images/Logos/Express JS.png" alt="Express JS logo" data-bs-toggle="tooltip"
+          data-bs-placement="top" data-bs-title="Express">
+        <img class="logo" src="images/Logos/Mongo DB.png" alt="Mongo DB logo" data-bs-toggle="tooltip"
+          data-bs-placement="top" data-bs-title="Mongo DB">
+        <img class="logo" src="images/Logos/Git.png" alt="Git logo" data-bs-toggle="tooltip" data-bs-placement="top"
+          data-bs-title="Git">
+        <img class="logo" src="images/Logos/Github.png" alt="Github logo" data-bs-toggle="tooltip"
+          data-bs-placement="top" data-bs-title="Github">
+      </div>
+    </section>
     <section id="certificates">
-      <h1 class="text-center display-1">Certificates</h1>
-      <div>
-
+      <h1 class="text-center display-1 mb-5 px-3">Certificates</h1>
+      <p class="text-center my-4">Below are certificates I've received for completing online courses that I found on the internet.</p>
+      <div class="container">
+        <div class="accordion" id="accordionCertificate">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFrontEnd"
+                aria-expanded="true" aria-controls="collapseFrontEnd">
+                Front-End Certificates
+              </button>
+            </h2>
+            <div id="collapseFrontEnd" class="accordion-collapse collapse show" data-bs-parent="#accordionCertificate">
+              <div class="accordion-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="http://dicoding.com/certificates/53XE4O519ZRN" target="_blank" rel="noopener noreferrer">
+                      Dicoding: Javascript Fundamentals
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseBackEnd" aria-expanded="false" aria-controls="collapseBackEnd">
+                Back-end certificates
+              </button>
+            </h2>
+            <div id="collapseBackEnd" class="accordion-collapse collapse" data-bs-parent="#accordionCertificate">
+              <div class="accordion-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="https://www.freecodecamp.org/certification/fccbf4b6e5e-a794-4929-b7aa-5883a808219d/back-end-development-and-apis" target="_blank" rel="noopener noreferrer">freeCodeCamp: Back End Development and APIs Certification</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://www.dicoding.com/certificates/KEXLL13YWXG2" target="_blank" rel="noopener noreferrer">Dicoding: Cloud Practitioner Essentials</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="http://dicoding.com/certificates/53XE4O519ZRN" target="_blank" rel="noopener noreferrer">Dicoding: Javascript Fundamentals</a>
+                  </li>
+                    <li class="list-group-item">
+                      <a href="http://dicoding.com/certificates/07Z68775YXQR" target="_blank" rel="noopener noreferrer">Dicoding: Beginner's Guide to Creating a Back-End Application</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
+                Other certificates
+              </button>
+            </h2>
+            <div id="collapseOther" class="accordion-collapse collapse" data-bs-parent="#accordionCertificate">
+              <div class="accordion-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="https://drive.google.com/file/d/1wZKaAxJpeQ7HrZFQHIOum0hnQifEHSUB/view?usp=sharing" target="_blank" rel="noopener noreferrer">Indonesia High School Informatics OSN-K Certificate</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://drive.google.com/file/d/1weSysYUBiUnNf5ig6T21WnGyQlCwTMij/view?usp=sharing" target="_blank" rel="noopener noreferrer">Brighten English: TOEFL Certificate of Achievement</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://drive.google.com/file/d/1-Id3J5cUiKLuvz0QQITKUoiy5xCNo-Sn/view?usp=sharing" target="_blank" rel="noopener noreferrer">RevoU: Intro to Software Engineering Certificate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="projects">
-      <h1 class="text-center display-1">Projects</h1>
+      <h1 class="text-center display-1 mb-5">Projects</h1>
       <p class="text-center my-4">Next are my projects I've made in my career</p>
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top" src="images/TF2 fan page.png" alt="Fan page thumbnail" role="img" aria-label="Placeholder: Thumbnail" focusable="false">
-              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+              <img class="bd-placeholder-img card-img-top custom-card-header" src="images/TF2 fan page.png"
+                alt="Team Fortress 2 fan page thumbnail" role="img" aria-label="Placeholder: Thumbnail"
+                focusable="false">
               <div class="card-body">
-                <p class="card-text">This is a fan page I've made for a game called Team Fortress 2. This game has always been one of my most favorite games ever, and I have spent lots of hours playing it.</p>
+                <h3>TF2 Fan Page</h3>
+                <p class="card-text">This is a fan page I've made for a game called Team Fortress 2. This game has
+                  always been one of my most favorite games ever, and I have spent lots of hours playing it.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                    <a class="btn btn-sm btn-primary link-light link-underline-opacity-0" href="https://github.com/WHPproductions/WHPproductions.github.io" target="_blank" rel="noopener noreferrer">Source</a>
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#projects-view-1">View</button>
+                    <a class="btn btn-sm btn-primary link-light link-underline-opacity-0"
+                      href="https://github.com/WHPproductions/WHPproductions.github.io" target="_blank"
+                      rel="noopener noreferrer">Source</a>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="projects-view-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">TF2 Fan website</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <iframe src="https://whpproductions.github.io/" width="100%" height="400" frameborder="0"></iframe>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary" href="https://whpproductions.github.io/" target="_blank"
+                      rel="noopener noreferrer">Go to website</a>
                   </div>
                 </div>
               </div>
@@ -96,30 +201,84 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img class="bd-placeholder-img card-img-top custom-card-header" src="images/game stock image.jpg"
+                alt="Video game thumbnail" role="img" aria-label="Placeholder: Thumbnail" focusable="false">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h3>Video Game</h3>
+                <p class="card-text">This is a story-telling video game that i've made by myself using pure HTML, CSS,
+                  and Javascript. Although the story hasn't been fully produced yet, but the game is still functional
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Source</button>
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#projects-view-2">View</button>
+                    <a class="btn btn-sm btn-primary link-light link-underline-opacity-0"
+                      href="https://github.com/WHPproductions/Game-project" target="_blank"
+                      rel="noopener noreferrer">Source</a>
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="projects-view-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Video Game website</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe src="https://whpproductions.github.io/Game-project/" width="100%" height="400"
+                      frameborder="0"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://whpproductions.github.io/Game-project/" target="_blank"
+                      rel="noopener noreferrer">Go to website</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img class="bd-placeholder-img card-img-top custom-card-header" src="images/school.jpg"
+                alt="School thumbnail" role="img" aria-label="Placeholder: Thumbnail" focusable="false">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h3>School Mockup Website</h3>
+                <p class="card-text">
+                  This is a school mockup website created by me to fulfill the requirements of an online course I've
+                  been taking.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Source</button>
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#projects-view-3">View</button>
+                    <a class="btn btn-primary"
+                      href="https://github.com/revou-fundamental-course/21-aug-23-WinataHadiPratama" target="_blank"
+                      rel="noopener noreferrer">source</a>
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="projects-view-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">School mockup website</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe src="https://revou-fundamental-course.github.io/21-aug-23-WinataHadiPratama/" width="100%"
+                      height="400" frameborder="0"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn btn-primary"
+                      href="https://revou-fundamental-course.github.io/21-aug-23-WinataHadiPratama/" target="_blank"
+                      rel="noopener noreferrer">Go to website</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -128,12 +287,16 @@
       </div>
     </section>
   </main>
-  <footer class="container py-4 px-2">
+  <footer id="contacts" class="container py-4 px-2">
     <div class="d-block border-bottom border-dark-subtle">
       <ul class="list-unstyled d-flex justify-content-center gap-2 pb-3">
-        <li><a aria-label="What's app contact" class="text-body-secondary" href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp h2"></i></a></li>
-        <li><a aria-label="Linked in contact" class="text-body-secondary" href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin h2"></a></i></li>
-        <li><a aria-label="G-mail contact" class="text-body-secondary" href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope h2"></a></i></li>
+        <li><a aria-label="What's app contact" class="text-body-secondary" href="http://wa.me/6289655306908"
+            target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp h2"></i></a></li>
+        <li><a aria-label="Linked in contact" class="text-body-secondary"
+            href="https://www.linkedin.com/in/winata-hadi-pratama-60710a24b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMalDIFziQ7uZhC3LOc73mw%3D%3D"
+            target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin h2"></i></a></li>
+        <li><a aria-label="Github contact" class="text-body-secondary" href="https://github.com/WHPproductions"
+            target="_blank" rel="noopener noreferrer"><i class="bi bi-github h2"></i></a></li>
       </ul>
     </div>
     <div class="d-block text-center text-body-secondary pt-3">
@@ -141,5 +304,10 @@
     </div>
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
 </body>
+
 </html>
